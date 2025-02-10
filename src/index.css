@@ -1,7 +1,11 @@
 @import "tailwindcss";
 @layer components {}
-
+@font-face {
+    font-family: 'FFDisplay';
+    src: url('./assets/ffdisplay.woff2');
+}
 @theme {
-    --color-blue-2: "#555s5s"
+    
+    --font-display:'FFDisplay'
 }
 
