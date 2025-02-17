@@ -23,26 +23,26 @@ const Featured = () => {
                 </div>
                 <Link className='underline' to='/'>Explore Symbols</Link>
             </div>
-            <div className='flex [&>*]:border-l-1 text-xl [&>*]:flex [&>*]:justify-center [&>*]:gap-3 [&>*]:item-center [&>*]:flex-col'>
+            <div className='flex [&>*]:border-l-1 text-xl [&>*]:flex [&>*]:pl-6 [&>*]:pb-7 [&>*]:justify-end [&>*]:gap-3 [&>*]:item-center [&>*]:flex-col'>
                 <div>
                     <Link to='/' className='hover:underline' >Alley</Link>
-                    <img src={Alley} alt="" />
+                    <img className='size-85 object-cover' src={Alley} alt="" />
                 </div>
                 <div>
                     <Link to='/' className='hover:underline' >Animals</Link>
-                    <img src={Animal} alt="" />
+                    <img className='size-85 object-cover' src={Animal} alt="" />
                 </div>
                 <div>
                     <Link to='/' className='hover:underline' >Falling</Link>
-                    <img src={Falling} alt="" />
+                    <img className='size-85 object-cover' src={Falling} alt="" />
                 </div>
                 <div>
                     <Link to='/' className='hover:underline' >Journey</Link>
-                    <img src={Journey} alt="" />
+                    <img className='size-85 object-cover' src={Journey} alt="" />
                 </div>
                 <div>
                     <Link to='/' className='hover:underline' >Ocean</Link>
-                    <img src={Ocean} alt="" />
+                    <img className='size-85 object-cover' src={Ocean} alt="" />
                 </div>
             </div>
 

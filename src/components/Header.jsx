@@ -1,40 +1,39 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../assets/logo.svg'
+import logo from '../assets/star.svg'
 const Header = () => {
   return (
     <div className='h-screen w-full '>
-      
-    <div className=' h-20 flex justify-between px-8  items-center font-semibold font-display'>
-      <div className='flex '>
-        <img src={logo} alt="" />
-        <h2>OpenBook</h2>
+
+      <div className=' h-20 flex justify-between px-8  items-center font-semibold font-display'>
+        <div className='flex items-center gap-1'>
+          <img className='size-4' src={logo} alt="" />
+          <h2>OpenBook</h2>
+        </div>
+        <div className='flex  justify-end gap-40 ' >
+          <div className='[&>*]:block [&>*]:hover:underline' >
+            <Link>Symbols</Link>
+            <Link>Types</Link>
+          </div>
+          <div className='[&>*]:block [&>*]:hover:underline'>
+            <Link>Oracle AI</Link>
+            <Link>About</Link>
+          </div>
+          <div>
+            <Link className='hover:underline'>Contribute</Link>
+          </div>
+        </div>
       </div>
-      <div className='flex  justify-end gap-40 ' >
-        <div className='[&>*]:block [&>*]:hover:underline' >
-          <Link>Symbols</Link>
-          <Link>Types</Link>
-        </div>
-        <div className='[&>*]:block [&>*]:hover:underline'>
-          <Link>Oracle AI</Link>
-          <Link>About</Link>
-        </div>
+      <div className='text-8xl w-full flex  items-center flex-col text-left '>
         <div>
-          <Link className='hover:underline'>Contribute</Link>
+          <div>Uncovering</div>
+          <div> Hidden Meaning -</div>
+          <div>A Guide to Dream</div>
+          <div>Analysis and Symbols</div>
+          <div>in the Modern World.</div>
         </div>
       </div>
     </div>
-    <div className='text-8xl w-full flex  items-center flex-col text-left '>
-      <div>
-      <div>Uncovering</div>
-      <div> Hidden Meaning -</div>
-      <div>A Guide to Dream</div>
-      <div>Analysis and Symbols</div>
-      <div>in the Modern World.</div>
-      </div>
-      
-    </div>
-  </div>
   )
 }
 
