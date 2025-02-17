@@ -1,9 +1,9 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 const Explore = () => {
     return (
         <>
-            <div>
+            <div className='h-screen w-full'>
                 <div className=''>
                     <h1 className='underline'>Explore</h1>
                     <h1>(07)</h1>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import logo from '../assets/logo.svg'
 const Header = () => {
   return (
-    <div>
+    <div className='h-screen w-full '>
       
     <div className=' h-20 flex justify-between px-8  items-center font-semibold font-display'>
       <div className='flex '>
@@ -24,12 +24,15 @@ const Header = () => {
         </div>
       </div>
     </div>
-    <div>
+    <div className='text-8xl w-full flex  items-center flex-col text-left '>
+      <div>
       <div>Uncovering</div>
       <div> Hidden Meaning -</div>
       <div>A Guide to Dream</div>
       <div>Analysis and Symbols</div>
       <div>in the Modern World.</div>
+      </div>
+      
     </div>
   </div>
   )
