@@ -6,6 +6,6 @@
 }
 @theme {
     
-    --font-display:'FFDisplay'
+    --font-display:'FFDisplay','sans-serif';
 }
 
