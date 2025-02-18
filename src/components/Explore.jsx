@@ -9,9 +9,9 @@ const Explore = () => {
                     <h1>(07)</h1>
                     <Link className='underline'>Dream Types</Link>
                 </div>
-                <div className='grid grid-cols-3'>
-                    <div className='flex  items-start '>
-                        <h2 className='text-[57px]'>Share Your Unique Dream Symbols</h2>
+                <div className='grid grid-cols-3  h-70'>
+                    <div className='flex  items-start  '>
+                        <h2 className='text-[52px] font-semibold leading-tight'>Share Your Unique Dream Symbols</h2>
                     </div>
                     <div className='flex flex-col justify-end gap-4' >
                         <p>Your dreams and insights are a vital part of the
