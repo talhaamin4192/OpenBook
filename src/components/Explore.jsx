@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 const Explore = () => {
     return (
         <>
-            <div className='h-[120vh] w-full px-10 border-t-1 flex flex-col justify-between pt-20 pb-6 font-display'>
+            <div data-sticky style={{ position: 'sticky', top: 0, zIndex: 100 }} className=' h-[120vh]  bg-white w-full px-10 border-t-1 flex flex-col justify-between pt-20 pb-6 font-display  '>
                 <div className='flex justify-between text-[57px] '>
                     <Link className='underline'>Explore</Link>
                     <h1>(07)</h1>
