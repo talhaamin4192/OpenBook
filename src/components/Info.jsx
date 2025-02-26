@@ -1,18 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import StarWhite from "../assets/star_white.svg"
+import ShuffleText from './ShuffleText';
 const Info = () => {
     return (
         <>
-            <div className=' h-screen w-full sticky top-0 -z-10  font-display grid grid-cols-2 border-t-1 [&>*]:flex [&>*]:justify-around
-            [&>*]:items-center [&>*]:flex-col transition-all ease-in'>
+            <div className=' h-screen w-full   font-display grid grid-cols-2 border-t-1 [&>*]:flex [&>*]:justify-around
+            [&>*]:items-center [&>*]:flex-col '>
                 <div className='px-5 bg-white'>
                     <h3 className='text-sm '>ABOUT US</h3>
                     <div className='text-center w-2/3'>
                         <p>At OpenBook, we believe that every dream is a narrative worth exploring—a hidden treasure trove of emotions, experiences, and insights just waiting to be unearthed. Your dreams are more than mere flights of fancy – they are your subconscious speaking to you in a language that transcends words.</p>
                         <p className='py-5'>OpenBook is here to translate that language, offering an in-depth guide to dream themes, types, and their interpretations in our complex, modern world.</p>
                     </div>
-                    <Link className='underline text-xl' to="/">Learn More</Link>
+                    <Link className='underline text-xl' to="/"><ShuffleText text="Learn More" /></Link>
                 </div>
                 <div className='text-white bg-black'>
                     <h3 className='text-sm font-semibold'>REAL-TIME ANALYSIS</h3>
@@ -21,7 +22,7 @@ const Info = () => {
                         <img className='size-4' src={StarWhite} />
                     </div>
 
-                    <Link className='underline text-xl' to="/">Interpret Dream</Link>
+                    <Link className='underline text-xl' to="/"><ShuffleText text="Interpret Dream" /></Link>
 
                 </div>
             </div>

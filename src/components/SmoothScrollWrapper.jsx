@@ -7,14 +7,14 @@ const SmoothScrollWrapper = ({ children }) => {
   useEffect(() => {
     // Initialize smooth scrollbar
     const scrollbar = Scrollbar.init(scrollContainerRef.current, {
-      damping: 0.1, // Adjust damping for smoothness
+      damping: 0.05, // Adjust damping for smoothness
       thumbMinSize: 20, // Minimum size of the scrollbar thumb
       renderByPixels: true, // Render by pixels for better performance
       alwaysShowTracks: false, // Hide scrollbar tracks when not scrolling
-      overscrollEffect: 'bounce', // Enable overscroll effect (required for sticky positioning)
+      overscrollEffect: 'bounce', // Disable overscroll effect
     });
 
-    // Re-enable sticky positioning
+    // Function to handle sticky elements
     const handleStickyElements = () => {
       const stickyElements = scrollContainerRef.current.querySelectorAll('[data-sticky]');
       stickyElements.forEach((element) => {
@@ -27,6 +27,7 @@ const SmoothScrollWrapper = ({ children }) => {
       });
     };
 
+    // Add listener for scroll events
     scrollbar.addListener(handleStickyElements);
 
     // Cleanup on unmount
@@ -36,7 +37,7 @@ const SmoothScrollWrapper = ({ children }) => {
         scrollbar.destroy();
       }
     };
-  }, []);
+  }, []); // Empty dependency array ensures this runs only once
 
   return (
     <div ref={scrollContainerRef} style={{ height: '100vh', overflow: 'hidden' }}>

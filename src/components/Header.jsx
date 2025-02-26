@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import logo from '../assets/star.svg';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
+import ShuffleText from './ShuffleText';
 // Register the ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
@@ -34,19 +34,19 @@ const Header = () => {
       <div className='h-20 flex justify-between px-8 items-center font-semibold font-display'>
         <div className='flex items-center gap-1'>
           <img className='size-4' src={logo} alt="" />
-          <h2>OpenBook</h2>
+          <h2>  <ShuffleText text="OpenBook" /></h2>
         </div>
         <div className='flex justify-end gap-40'>
           <div className='[&>*]:block [&>*]:hover:underline'>
-            <Link>Symbols</Link>
-            <Link>Types</Link>
+            <Link><ShuffleText text="Symbols" /></Link>
+            <Link><ShuffleText text="Types" /></Link>
           </div>
           <div className='[&>*]:block [&>*]:hover:underline'>
-            <Link>Oracle AI</Link>
-            <Link>About</Link>
+            <Link><ShuffleText text="Oracle AI" /></Link>
+            <Link><ShuffleText text="About" /></Link>
           </div>
           <div>
-            <Link className='hover:underline'>Contribute</Link>
+            <Link className='hover:underline'><ShuffleText text="Contribute" /></Link>
           </div>
         </div>
       </div>
