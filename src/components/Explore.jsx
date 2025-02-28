@@ -5,7 +5,7 @@ const Explore = () => {
     return (
         <>
             <div  className=' h-[120vh]  bg-white w-full px-10 border-t-1 flex flex-col justify-between pt-20 pb-6 font-display  '>
-                <div className='flex justify-between text-[57px] '>
+                <div className='flex justify-between text-[57px] group-[]: '>
                     <Link className='underline'><ShuffleText text="Explore" /></Link>
                     <h1><ShuffleText text="(07)" /></h1>
                     <Link className='underline'><ShuffleText text="Dream Types" /></Link>
